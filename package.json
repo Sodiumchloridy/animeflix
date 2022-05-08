@@ -23,8 +23,8 @@
     "tailwind-scrollbar-hide": "^1.1.6"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.14.0",
+    "autoprefixer": "^10.4.6",
+    "eslint": "8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
