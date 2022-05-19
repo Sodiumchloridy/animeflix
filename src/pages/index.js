@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 
+import Head from 'next/head';
+
 import Section from '@components/anime/Section';
+import Footer from '@components/Footer';
 import { progress } from '@pages/_app';
 import client from '@utility/client';
 import { animeBannerFragment, animeInfoFragment } from '@utility/fragments';
@@ -15,6 +18,9 @@ export default function Home({ banner, trending, popular, topRated }) {
 
   return (
     <>
+      <Head>
+        <title>Weebos Hideout</title>
+      </Head>
       <Header />
 
       <Banner anime={banner} onLoadingComplete={progress.finish} />
@@ -22,6 +28,8 @@ export default function Home({ banner, trending, popular, topRated }) {
       <Section title="Trending Now" animeList={trending} />
       <Section title="Popular" animeList={popular} />
       <Section title="Top Rated (All time)" animeList={topRated} />
+
+      <Footer />
     </>
   );
 }

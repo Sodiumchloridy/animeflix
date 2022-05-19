@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import { EmojiSadIcon } from '@heroicons/react/solid';
 
 import Banner from '@components/anime/Banner';
@@ -12,6 +14,9 @@ import { getKitsuEpisodes } from '@utility/gogoanime';
 function Anime({ anime, recommended, episodes }) {
   return (
     <>
+      <Head>
+        <title>Weebos Hideout</title>
+      </Head>
       <Header />
       <Banner anime={anime} onLoadingComplete={progress.finish} />
 

@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import Episode from '@components/Episode';
@@ -53,6 +54,9 @@ function Video({ anime, recommended }) {
 
   return (
     <>
+      <Head>
+        <title>Weebos Hideout</title>
+      </Head>
       <Header />
 
       <div className="lg:flex mt-4 space-x-4">

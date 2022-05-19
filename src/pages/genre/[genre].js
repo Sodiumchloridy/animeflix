@@ -1,6 +1,8 @@
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import Card from '@components/anime/Card';
+import Footer from '@components/Footer';
 import Header from '@components/Header';
 import { progress } from '@pages/_app';
 import client from '@utility/client';
@@ -14,6 +16,9 @@ export default function Genre({ searchResults }) {
 
   return (
     <>
+      <Head>
+        <title>Weebos Hideout</title>
+      </Head>
       <Header />
 
       <p className="font-semibold text-white mt-4 ml-3 sm:ml-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
@@ -25,6 +30,8 @@ export default function Genre({ searchResults }) {
           <Card key={anime.id} anime={anime} />
         ))}
       </div>
+
+      <Footer />
     </>
   );
 }
