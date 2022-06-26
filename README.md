@@ -1,7 +1,3 @@
-[![Follow me](https://img.shields.io/github/followers/chirag-droid?label=follow%20me&style=social)](https://github.com/chirag-droid)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chiragdroid)
-
 # Animeflix
 
 A anime discovery, streaming site made with NextJs and TailwindCSS. Please deploy your own version of the site, by following the instructions. Please follow the instructions given below to deploy for yourself.
